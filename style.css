@@ -1,83 +1,87 @@
-/* Light Mode (Default) */
 body {
     font-family: Arial, sans-serif;
-    background: #f4f4f4;
     text-align: center;
-    padding: 20px;
-    transition: background 0.3s, color 0.3s;
+    background: linear-gradient(90deg, rgba(255, 94, 98, 0.9), rgba(69, 123, 157, 0.9));
+    color: black;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .container {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 400px;
-    margin: auto;
-    transition: background 0.3s, color 0.3s;
-}
-
-h2 {
-    color: #333;
-}
-
-.search-box {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-input {
-    padding: 10px;
-    width: 70%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(31, 177, 24, 0.9), rgba(69, 123, 157, 0.9));
+    box-shadow: 3px 3px 8px rgba(24, 183, 194, 0.673);
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 button {
-    padding: 10px;
-    background: blue;
+    background-color: #0b290d;
     color: white;
     border: none;
-    border-radius: 5px;
+    padding: 10px 15px;
     cursor: pointer;
-    transition: background 0.3s;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
 }
 
 button:hover {
-    background: darkblue;
+    background-color: #0d335d;
+    transform: scale(1.05); 
 }
 
-.weather-box {
-    margin-top: 20px;
+button:active {
+    transform: scale(0.95); 
 }
 
-.weather-box p {
-    font-size: 18px;
-    color: #555;
-}
-
-/* Dark Mode */
 .dark-mode {
-    background: #222;
+    background-color: #222;
     color: white;
 }
 
 .dark-mode .container {
     background: #333;
-    color: white;
-}
-
-.dark-mode input {
-    background: #444;
-    color: white;
-    border: 1px solid #666;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
 }
 
 .dark-mode button {
-    background: #555;
+    background-color: #444;
 }
 
 .dark-mode button:hover {
-    background: #777;
+    background-color: #666;
+}
+#cityInput {
+    margin-top: 15px; 
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+#cityInput, .search-box button {
+    height: 40px;
+    font-size: 16px;
+    padding: 8px;
+    border: 2px solid #75a8a2;
+    border-radius: 5px;
+}
+
+#cityInput {
+    width: 200px; 
+    border-right: none;
+}
+
+.search-box button {
+    width: 100px;  
+    background-color: #ff4d00bb;
+    color: white;
+    cursor: pointer;
+    border-left: none; 
+}
+
+.search-box button:hover {
+    background-color: #15d812;
 }
