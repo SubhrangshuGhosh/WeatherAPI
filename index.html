@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">  <!-- Added for PWA -->
 </head>
 <body>
     <div class="container">
         <h2>Weather App</h2>
-        <button id="toggleDarkMode">🌙 Dark Mode</button>  <!-- FIXED: Corrected ID -->
+        <button id="toggleDarkMode">🌙 Dark Mode</button>
 
         <div class="search-box">
             <input type="text" id="cityInput" placeholder="Enter city name">
@@ -24,6 +25,14 @@
             <p id="windSpeed"></p>
         </div>
     </div>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(() => console.log("Service Worker Registered"))
+                .catch(error => console.log("Service Worker Registration Failed", error));
+        }
+    </script>
 
     <script src="script.js"></script>
 </body>

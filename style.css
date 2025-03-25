@@ -1,7 +1,8 @@
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background: linear-gradient(90deg, rgba(255, 94, 98, 0.9), rgba(69, 123, 157, 0.9));
+    background: linear-gradient(90deg, rgba(255, 231, 94, 0.9), rgba(69, 123, 157, 0.9));
     color: black;
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
@@ -10,15 +11,15 @@ body {
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
-    background: linear-gradient(90deg, rgba(31, 177, 24, 0.9), rgba(69, 123, 157, 0.9));
-    box-shadow: 3px 3px 8px rgba(24, 183, 194, 0.673);
+    background: linear-gradient(90deg, rgba(67, 123, 64, 0.9), rgba(69, 123, 157, 0.9));
+    box-shadow: 3px 3px 8px rgba(46, 217, 229, 0.9);
     border-radius: 8px;
     transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 button {
-    background-color: #0b290d;
-    color: white;
+    background-color: #0eadb5;
+    color: rgb(43, 11, 11);
     border: none;
     padding: 10px 15px;
     cursor: pointer;
@@ -27,8 +28,9 @@ button {
 }
 
 button:hover {
-    background-color: #0d335d;
+    background-color: #5699e1;
     transform: scale(1.05); 
+    color: rgb(245, 245, 245);
 }
 
 button:active {
@@ -42,7 +44,7 @@ button:active {
 
 .dark-mode .container {
     background: #333;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgb(244, 242, 242);
 }
 
 .dark-mode button {
@@ -85,3 +87,4 @@ button:active {
 .search-box button:hover {
     background-color: #15d812;
 }
+
